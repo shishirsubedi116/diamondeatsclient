@@ -1,0 +1,30 @@
+
+.orderItem {
+    padding: 20px;
+    max-width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    margin: auto;
+}
+
+.orderItem p{
+    margin: 5px auto;
+}
+.foodOrdersItems{
+    border: 1px solid black;
+    margin: 1px;
+}
+.orderItem button{
+    padding: 7px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+}
+@media (max-width: 330px) {
+    .orderList {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}

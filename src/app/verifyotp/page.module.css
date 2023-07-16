@@ -1,0 +1,40 @@
+
+
+.verifyOtp {
+  padding: 20px;
+}
+
+.verifyOtp .otpForm {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.verifyOtp label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.verifyOtp input{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.verifyOtp button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .verifyOtp .otpForm {
+    max-width: 100%;
+  }
+}

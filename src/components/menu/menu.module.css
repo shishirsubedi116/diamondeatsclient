@@ -1,0 +1,77 @@
+.menudiv {
+  margin: 5px;
+}
+
+.menudiv h2 {
+  text-align: center;
+}
+
+.menudiv .searchSection {
+  text-align: center;
+  margin: 1px;
+  margin-top: 20px;
+}
+
+.menudiv .searchSection input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.menudiv .searchSection button[type="button"] {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  background-color: #ffd700;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menudiv .searchSection button[type="button"]:hover {
+  background-color: #f0c800;
+}
+
+.menudiv .searchSection a{
+  text-decoration: none;
+  color: black;
+}
+
+.menudiv .foodList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menudiv .foodItem {
+    padding: 15px;
+    height: auto;
+  }
+
+  .menudiv .foodItem img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menudiv .searchSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menudiv .searchSection input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .menudiv .searchSection button[type="button"] {
+    width: 100%;
+  }
+}

@@ -1,0 +1,63 @@
+.yourCartPage {
+  padding: 20px;
+
+}
+.yourCartPage h1{
+    text-align: center;
+    margin: 2px auto;
+}
+.yourCartPage .cartPage {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.yourCartPage .cartItems {
+  margin-bottom: 20px;
+}
+
+.yourCartPage .cartItem {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.yourCartPage .cartItem button{
+  padding: 5px;
+  background-color: rgba(255, 0, 0, 0.868);
+  color: white;
+  border:  none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.yourCartPage .totalPrice {
+  text-align: right;
+}
+
+.yourCartPage .placeOrderButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .yourCartPage .cartPage {
+    padding: 10px;
+  }
+
+  .yourCartPage .cartItem {
+    padding: 5px;
+  }
+
+  .yourCartPage .placeOrderButton {
+    width: 100%;
+  }
+}

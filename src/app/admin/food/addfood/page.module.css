@@ -1,0 +1,57 @@
+.addfood {
+    margin: 5px;
+}
+
+.addfood .adminForm {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.addfood .adminForm h2 {
+    margin-bottom: 20px;
+}
+
+.addfood .adminForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.addfood .adminForm input,
+.addfood .adminForm textarea,
+.addfood .adminForm select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.addfood .adminForm button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #FFD700;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 2px;
+}
+
+.addfood .adminForm button[type="submit"]:hover {
+    background-color: #F0C800;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .addfood .adminForm {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .addfood .adminForm {
+        padding: 10px;
+    }
+}

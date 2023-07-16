@@ -1,0 +1,44 @@
+/* Reset some default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 350px) {
+  body {
+    width: 350px;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 285px) {
+  body {
+    width: 285px;
+    max-width: 285px;
+    margin: 0 auto;
+  }
+}
+/*
+
+backButton {
+  padding: 5px;
+  background-color: brown;
+  cursor: pointer;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+<backButton onClick={()=>router.back()}>Back</backButton>
+
+*/

@@ -1,0 +1,46 @@
+.mainAdminPage {
+  padding: 20px;
+}
+
+.mainAdminPage .adminLinks {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mainAdminPage h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mainAdminPage .adminLinks ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mainAdminPage .adminLinks li {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.mainAdminPage .adminLinks a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .mainAdminPage .adminLinks {
+    max-width: 100%;
+  }
+
+  .mainAdminPage .adminLinks a {
+    width: 100%;
+    text-align: center;
+  }
+}

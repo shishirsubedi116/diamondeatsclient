@@ -1,0 +1,57 @@
+.updateFoodAdmin {
+    margin: 2px;
+}
+
+.updateFoodAdmin .adminForm {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.updateFoodAdmin .adminForm h2 {
+    margin-bottom: 20px;
+}
+
+.updateFoodAdmin .adminForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.updateFoodAdmin .adminForm input[type="text"],
+
+.updateFoodAdmin .adminForm select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.updateFoodAdmin .adminForm button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.updateFoodAdmin .adminForm button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .updateFoodAdmin .adminForm {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .updateFoodAdmin .adminForm {
+        padding: 5px;
+    }
+}

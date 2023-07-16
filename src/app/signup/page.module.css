@@ -1,0 +1,107 @@
+.signupPage {
+  margin: 5px auto;
+}
+
+.signupPage h1 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.signupPage form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signupPage label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.signupPage input[type="text"],
+.signupPage input[type="email"],
+.signupPage input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  /* Include padding and border in the total width */
+}
+
+.signupPage button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #ffd700;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signupPage button[type="submit"]:hover {
+  background-color: #f0c800;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .signupPage form {
+    padding: 15px;
+  }
+
+  .signupPage h1 {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .signupPage input[type="text"],
+  .signupPage input[type="email"],
+  .signupPage input[type="password"],
+  .signupPage button[type="submit"] {
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 480px) {
+    .signupPage form {
+      padding: 10px;
+      margin: 2px;
+    }
+
+    .signupPage h1 {
+      margin-top: 15px;
+      font-size: 20px;
+    }
+
+    .signupPage input[type="text"],
+    .signupPage input[type="email"],
+    .signupPage input[type="password"],
+    .signupPage button[type="submit"] {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+  }
+}
+
+/* Additional styles for login section */
+.signupPage .loginSection {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.signupPage .loginSection p {
+  font-size: 14px;
+}
+
+.signupPage .loginSection a {
+  color: blue;
+}
+
+.signupPage .loginSection a:hover {
+  text-decoration: underline;
+}

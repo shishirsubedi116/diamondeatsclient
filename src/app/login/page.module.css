@@ -1,0 +1,100 @@
+.loginPage {
+  margin: 5px auto;
+}
+
+.loginPage h1 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.loginPage form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.loginPage label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.loginPage input[type="email"],
+.loginPage input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.loginPage button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #ffd700;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.forgotPass {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.forgotPass button{
+  padding: 5px;
+  background-color:#ccc;
+  color: black;
+  border: none;
+  cursor: pointer;
+
+}
+
+.loginPage button[type="submit"]:hover {
+  background-color: #f0c800;
+}
+.noAccount {
+  text-align: center;
+  margin-top: 15px;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .loginPage form {
+    padding: 15px;
+  }
+
+  .loginPage h1 {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .loginPage input[type="email"],
+  .loginPage input[type="password"],
+  .loginPage button[type="submit"] {
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 480px) {
+    .loginPage form {
+      padding: 10px;
+      margin: 2px;
+    }
+
+    .loginPage h1 {
+      margin-top: 15px;
+      font-size: 20px;
+    }
+
+    .loginPage input[type="email"],
+    .loginPage input[type="password"],
+    .loginPage button[type="submit"] {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+  }
+}

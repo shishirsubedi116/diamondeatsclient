@@ -1,0 +1,89 @@
+.getAllOrders .searchSection {
+    text-align: center;
+    margin: 1px;
+    margin-top: 30px;
+}
+
+.getAllOrders .searchSection input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.getAllOrders .searchSection button[type="button"] {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #FFD700;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.getAllOrders .searchSection button[type="button"]:hover {
+    background-color: #F0C800;
+}
+
+.getAllOrders main {
+    padding: 20px;
+}
+
+.getAllOrders h2 {
+    margin-bottom: 20px;
+}
+
+.getAllOrders table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.getAllOrders thead {
+    background-color: #f2f2f2;
+}
+
+.getAllOrders th,
+.getAllOrders td {
+    padding: 5px;
+    border: 1px solid black;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+    .getAllOrders table {
+        font-size: 14px;
+    }
+
+    .getAllOrders th,
+    .getAllOrders td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .getAllOrders .searchSection input[type="text"] {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .getAllOrders .searchSection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .getAllOrders .searchSection input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .getAllOrders .searchSection button[type="button"] {
+        width: 100%;
+    }
+
+}

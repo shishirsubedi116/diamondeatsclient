@@ -1,0 +1,74 @@
+.orderFormMain {
+  padding: 20px;
+}
+.orderFormMain p{
+    margin: 2px auto;
+}
+.orderFormMain .totalItems{
+    text-align: left;
+    margin: 10px auto;
+    color: #4caf50;
+}
+.orderFormMain .cartItems,
+.orderFormMain .orderForm {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.orderFormMain .cartItems h2,
+.orderFormMain .orderForm h2 {
+  margin-top: 0;
+}
+
+.orderFormMain .cartItem {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.orderFormMain .orderForm form {
+  margin-top: 20px;
+}
+
+.orderFormMain .formGroup {
+  margin-bottom: 20px;
+}
+
+.orderFormMain label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.orderFormMain input, 
+.orderFormMain textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.orderFormMain button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .orderFormMain .cartItems,
+  .orderFormMain .orderForm {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .orderFormMain .cartItem,
+  .orderFormMain .formGroup {
+    padding: 5px;
+  }
+}

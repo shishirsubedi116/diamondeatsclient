@@ -1,0 +1,75 @@
+/* homeContainer content styles */
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.homeContainer .content {
+  flex: 1;
+  text-align: center;
+  margin: 5px;
+}
+
+.homeContainer .content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.homeContainer .content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.homeContainer .searchBar {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.homeContainer .searchBar input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.homeContainer .searchButton {
+  padding: 8px 16px;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  background-color: #ffd700;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.homeContainer .searchButton:hover {
+  background-color: #f0c800;
+}
+
+.homeContainer .foodImage img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .homeContainer {
+    flex-direction: column;
+  }
+
+  .homeContainer .foodImage img {
+    margin-top: 20px;
+  }
+}
+
+/* @media (max-width: 300px) {
+  body{
+    width: 300px;
+    margin: 0 auto;
+  }
+} */
