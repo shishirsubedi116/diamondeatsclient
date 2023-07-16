@@ -1,10 +1,10 @@
 import React from 'react'
 import Menu from '@/components/menu/Menu'
 
-const page = () => {
+const Page = () => {
   return (
     <Menu/>
   )
 }
 
-export default page
+export default Page

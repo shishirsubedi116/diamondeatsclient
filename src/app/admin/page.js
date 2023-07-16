@@ -5,7 +5,7 @@ import styles from './page.module.css'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation';
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
 
   useEffect(() => {
@@ -34,4 +34,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

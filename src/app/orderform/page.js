@@ -5,7 +5,7 @@ import styles from './page.module.css'
 import CartContext from '@/context/CartContext'
 import { useRouter } from 'next/navigation'
 
-const page = () => {
+const Page = () => {
     const { cartData, setCartData } = useContext(CartContext)
     let quantity = 0
     let totalprice = 0
@@ -110,4 +110,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

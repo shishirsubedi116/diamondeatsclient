@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import CartContext from '@/context/CartContext'
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
   const id = params.id
 
   const [foodItem, setFoodItem] = useState({})
@@ -105,4 +105,4 @@ const page = ({ params }) => {
   )
 }
 
-export default page
+export default Page

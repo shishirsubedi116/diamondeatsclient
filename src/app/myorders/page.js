@@ -5,7 +5,7 @@ import styles from './page.module.css'
 import MyOrderComponent from '@/components/myordercomponent/MyOrderComponent'
 import { useRouter } from 'next/navigation'
 
-const page = () => {
+const Page = () => {
 
   const router = useRouter();
   const [orderData, setOrderData] = useState([])
@@ -58,4 +58,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -6,7 +6,7 @@ import styles from '../page.module.css'
 import FoodContainer from '@/components/foodcontainer/FoodContainer'
 
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
     const id = params.id
     const [foods, setFoods] = useState([])
     const getData = async () => {
@@ -52,4 +52,4 @@ const page = ({ params }) => {
     )
 }
 
-export default page
+export default Page

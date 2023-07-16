@@ -5,7 +5,7 @@ import React, { useContext, useState } from 'react'
 import styles from './page.module.css'
 import { useRouter } from 'next/navigation';
 
-const page = () => {
+const Page = () => {
 
 
   const [email, setEmail] = useState('')
@@ -92,4 +92,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

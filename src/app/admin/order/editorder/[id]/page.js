@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import styles from '../page.module.css'
 import { useRouter } from 'next/navigation';
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
     const id = params.id;
 
     const [status, setStatus] = useState('Completed')
@@ -57,4 +57,4 @@ const page = ({ params }) => {
     )
 }
 
-export default page
+export default Page

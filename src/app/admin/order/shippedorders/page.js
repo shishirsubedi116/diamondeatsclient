@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import OrderItem from '@/components/orderItem/orderItem'
 
-const page = () => {
+const Page = () => {
 
     const [searchvalue, setSearchvalue] = useState('')
     const [orders, setOrders] = useState([]);
@@ -110,4 +110,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

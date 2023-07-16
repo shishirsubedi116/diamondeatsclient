@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './page.module.css'
 import { useRouter } from 'next/navigation'
 
-const page = () => {
+const Page = () => {
     const [updatedData, setUpdatedData] = useState('Name')
     const [value, setValue] = useState('')
     const [foodId, setFoodId] = useState(0)
@@ -67,4 +67,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
