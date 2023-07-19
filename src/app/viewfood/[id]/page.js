@@ -36,6 +36,11 @@ const Page = ({ params }) => {
   }
 
   const addItem = async () => {
+    if(!sessionStorage.getItem('token')){
+      alert('Please Login First')
+      router.push('/login')
+      return
+    }
     try {
       const order = {
         "FoodName": foodItem.Name,

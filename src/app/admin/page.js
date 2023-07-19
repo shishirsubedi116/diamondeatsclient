@@ -21,7 +21,7 @@ const Page = () => {
         <ul>
           <li><Link href="/admin/order/todayorders">Today's Orders</Link></li>
           <li><Link href="/admin/food/addfood">Add Food Item</Link></li>
-          <li><Link href="/admin/food/getallfooditems">Get all food Items</Link></li>
+          <li><Link href="/admin/food/deletefood">Delete Food</Link></li>
           <li><Link href="/admin/food/updatefood">Update Food Item</Link></li>
           <li><Link href="/admin/order/getallorders">All Orders</Link></li>
           <li><Link href="/admin/order/shippedorders">Shipped Orders</Link></li>

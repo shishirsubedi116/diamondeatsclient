@@ -44,6 +44,7 @@ const Page = () => {
             })
 
             const data = await response.json()
+            console.log(data);
             if (data.success) {
                 alert(data.message)
                 router.push('/myorders')
@@ -53,8 +54,6 @@ const Page = () => {
                 alert(data.message)
                 router.push('/menu')
             }
-
-
         } catch (error) {
             console.log(error);
         }
@@ -79,7 +78,7 @@ const Page = () => {
                 }
                 <p className={styles.totalItems}><b>Total Food Items: </b> <i>{cartData.length}</i></p>
                 <p className={styles.totalItems}><b>Total Food Quantity: </b> <i>{quantity}</i></p>
-                <p className={styles.totalItems}><b>Total Paying Price: <i><b>Npr {parseFloat(totalprice) + 120}</b> Rs 120 delivery charge</i></b></p>
+                <p className={styles.totalItems}><b>Total Paying Price: <i><b>Npr {parseFloat(totalprice) + 120}</b> (Rs 120 delivery charge)</i></b></p>
             </div>
 
             <div className={styles.orderForm}>

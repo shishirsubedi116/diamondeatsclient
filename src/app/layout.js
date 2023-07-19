@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import Footer from '@/components/footer/Footer'
 import CartContext from '@/context/CartContext'
 import { useState } from 'react'
+import Yourcart from '@/components/yourcart/Yourcart'
 // const inter = Inter({ subsets: ['latin'] })
 
 // export const metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className='body'>
         <CartContext.Provider value={{ cartData, setCartData }}>
             <Navbar />
+            {/* <Yourcart/> */}
             {children}
             <Footer />
         </CartContext.Provider>

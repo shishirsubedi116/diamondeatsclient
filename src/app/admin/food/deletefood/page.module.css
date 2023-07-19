@@ -1,0 +1,43 @@
+.deleteFoodMain {
+  padding: 20px;
+}
+
+.deleteFoodMain .deleteForm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.deleteFoodMain .formGroup {
+  margin-bottom: 20px;
+}
+
+.deleteFoodMain label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.deleteFoodMain input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.deleteFoodMain button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .deleteFoodMain .deleteForm {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
