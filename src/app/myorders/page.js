@@ -37,7 +37,7 @@ const Page = () => {
       alert('Please Login')
     }
     fetchdata()
-  },[])
+  })
 
 
   return (
@@ -48,7 +48,7 @@ const Page = () => {
           {
             orderData.map((elem, index)=>{
               return (
-                <MyOrderComponent orderData={orderData[index]} />
+                <MyOrderComponent key={index} orderData={orderData[index]} />
               )
             })
           }

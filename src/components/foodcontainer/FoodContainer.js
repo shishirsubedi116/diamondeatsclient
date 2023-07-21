@@ -1,12 +1,16 @@
 import React from 'react'
 import styles from './foodcontainer.module.css'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
+
 
 const FoodContainer = ({ Name, Price, Availability, Category, Picture, Unit, id }) => {
     const router = useRouter()
+    const src = `https://diamondeats.onrender.com/public/images/${Picture}`;
     return (
         <div className={styles.foodItem}>
-            <img src={`https://diamondeats.onrender.com/public/images/${Picture}`} alt="Food" />
+            {/* <Image src={source} width={400} height={300} alt="Food" /> */}
+            <Image loader={() => src} alt=' Food Image' src={src} width={500} height={500}/>
             <h3>{Name}</h3>
             <p>Category: {Category}</p>
             <p>Price: Rs {Price} per {Unit}</p>

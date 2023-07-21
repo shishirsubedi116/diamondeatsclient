@@ -11,7 +11,7 @@ const Page = () => {
         if(!sessionStorage.getItem('isAdmin') || !sessionStorage.getItem('token')){
             router.push('/')
         }
-    },[])
+    })
 
     const deleteFood = async (e) => {
         e.preventDefault()

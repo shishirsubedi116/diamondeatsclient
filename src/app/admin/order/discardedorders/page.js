@@ -61,7 +61,7 @@ const Page = () => {
 
     useEffect(() => {
         fetchAllOrders()
-    }, [])
+    })
 
     return (
         <main className={styles.getAllOrders}>
@@ -94,11 +94,11 @@ const Page = () => {
                             searchData.length == 0 ?
                                 orders.map((elem) => {
                                     return (
-                                        <OrderItem _id={elem._id} OrderId={elem.OrderId} customerName={elem.customerName} phoneNo={elem.phoneNo} Address={elem.Address} Email={elem.Email} orderItems={elem.orderItems} OrderStatus={elem.OrderStatus} OrderedAt={elem.OrderedAt.slice(0, 10)} Price={elem.Price} deliveryAt={elem.deliveryAt.slice(0, 10)} />
+                                        <OrderItem key={elem._id}  _id={elem._id} OrderId={elem.OrderId} customerName={elem.customerName} phoneNo={elem.phoneNo} Address={elem.Address} Email={elem.Email} orderItems={elem.orderItems} OrderStatus={elem.OrderStatus} OrderedAt={elem.OrderedAt.slice(0, 10)} Price={elem.Price} deliveryAt={elem.deliveryAt.slice(0, 10)} />
                                     )
                                 }) : searchData.map((elem) => {
                                     return (
-                                        <OrderItem _id={elem._id} OrderId={elem.OrderId} customerName={elem.customerName} phoneNo={elem.phoneNo} Address={elem.Address} Email={elem.Email} orderItems={elem.orderItems} OrderStatus={elem.OrderStatus} OrderedAt={elem.OrderedAt.slice(0, 10)} Price={elem.Price} deliveryAt={elem.deliveryAt.slice(0, 10)} />
+                                        <OrderItem key={elem._id}  _id={elem._id} OrderId={elem.OrderId} customerName={elem.customerName} phoneNo={elem.phoneNo} Address={elem.Address} Email={elem.Email} orderItems={elem.orderItems} OrderStatus={elem.OrderStatus} OrderedAt={elem.OrderedAt.slice(0, 10)} Price={elem.Price} deliveryAt={elem.deliveryAt.slice(0, 10)} />
                                     )
                                 })
                         }

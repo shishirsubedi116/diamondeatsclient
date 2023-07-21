@@ -2,7 +2,7 @@
 
 import React, { useContext, useEffect, useState } from 'react'
 import styles from './page.module.css'
-import CartContext from '@/context/CartContext'
+import {CartContext} from '@/context/CartContext'
 import { useRouter } from 'next/navigation'
 
 const Page = () => {
@@ -64,11 +64,11 @@ const Page = () => {
             <div className={styles.cartItems}>
                 <h2>Your Cart</h2>
                 {
-                    cartData.map((elem) => {
+                    cartData.map((elem, index) => {
                         quantity = parseInt(quantity) + parseInt(elem.Quantity)
                         totalprice = parseFloat(totalprice) + parseFloat(elem.TotalFoodPrice)
                         return (
-                            <div className={styles.cartItem}>
+                            <div key={index} className={styles.cartItem}>
                                 <p>Name: {elem.FoodName}</p>
                                 <p>Quantity: {elem.Quantity}</p>
                                 <p>Price: {elem.TotalFoodPrice}</p>

@@ -12,7 +12,7 @@ const Page = () => {
     const [name, setName] = useState('')
     const [category, setCategory] = useState('')
     const [price, setPrice] = useState(0)
-    const [foodId, setFoodId] = useState('1')
+    const [foodId, setFoodId] = useState(1)
     const [unit, setUnit] = useState('')
     const [image, setImage] = useState('')
 
@@ -20,7 +20,10 @@ const Page = () => {
         if (!sessionStorage.getItem('token') || !sessionStorage.getItem('isAdmin')) {
             router.push('/');
         };
-    }, [])
+    })
+    useEffect(() => {
+        console.clear()
+    })
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -57,6 +60,7 @@ const Page = () => {
             }
         } catch (err) {
             console.log(err)
+            console.clear()
         }
     }
 

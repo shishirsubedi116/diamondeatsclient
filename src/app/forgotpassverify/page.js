@@ -14,7 +14,7 @@ const Page = () => {
         if (!sessionStorage.getItem('tempEmail')) {
             router.push('/login');
         }
-    }, [])
+    })
 
     const handleSubmit = async (e) => {
         e.preventDefault()

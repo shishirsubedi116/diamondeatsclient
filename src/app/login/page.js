@@ -86,7 +86,7 @@ const Page = () => {
         <button type="submit" onClick={handleSubmit}>Login</button>
         <p className={styles.forgotPass}> <button onClick={forgotPassword}>Forgot Password</button></p>
         <p className={styles.forgotPass}> <button onClick={changePass}>Change Password</button></p>
-        <p className={styles.noAccount}>Don't have an account? <Link href="/signup">Signup</Link></p>
+        <p className={styles.noAccount}>Don&apos;t have an account? <Link href="/signup">Signup</Link></p>
       </form>
     </div>
   )

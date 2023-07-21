@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import styles from '../page.module.css'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
-import CartContext from '@/context/CartContext'
+import { CartContext } from '@/context/CartContext'
 
 const Page = ({ params }) => {
   const id = params.id
@@ -36,7 +36,7 @@ const Page = ({ params }) => {
   }
 
   const addItem = async () => {
-    if(!sessionStorage.getItem('token')){
+    if (!sessionStorage.getItem('token')) {
       alert('Please Login First')
       router.push('/login')
       return
@@ -59,13 +59,13 @@ const Page = ({ params }) => {
 
   useEffect(() => {
     fetchData()
-  }, [])
+  })
 
-  useEffect(()=>{
-    if(quantity<1){
+  useEffect(() => {
+    if (quantity < 1) {
       setQuantity(1)
     }
-  },[quantity])
+  }, [quantity])
 
   const handleChange = (e) => {
     if (e.target.value < 1) {
@@ -76,12 +76,12 @@ const Page = ({ params }) => {
     }
   }
 
-  const handleSum = (type)=>{
-    if(type == 'plus'){
-      setQuantity(quantity+1)
+  const handleSum = (type) => {
+    if (type == 'plus') {
+      setQuantity(quantity + 1)
     }
-    if(type == 'minus'){
-      setQuantity(quantity-1)
+    if (type == 'minus') {
+      setQuantity(quantity - 1)
     }
   }
 
@@ -89,20 +89,20 @@ const Page = ({ params }) => {
     <main className={styles.viewFoodBox}>
       <section className={styles.foodItem}>
         <div className={styles.foodItem__image}>
-          <img src={`https://diamondeats.onrender.com/public/images/${foodItem.Picture}`} alt="" width="100%" height="100%" />
+          <Image src={`https://diamondeats.onrender.com/public/images/${foodItem.Picture}`} alt=' Food Image' height={400} width={500} />
         </div>
         <div className={styles.foodItem__details}>
           <h2><b>{foodItem.Name}</b></h2>
           <p>Category: <b>{foodItem.Category}</b></p>
           <p>FoodId: <b>{foodItem.foodId}</b></p>
           <p>Price: <b>{foodItem.Price}</b></p>
-          <p>Availability: <b>{foodItem.Availability == 'true'? <>Available</>: <>Not Available</>}</b></p>
+          <p>Availability: <b>{foodItem.Availability == 'true' ? <>Available</> : <>Not Available</>}</b></p>
           <p>Quantity: <input type="Number" value={quantity} onChange={(e) => handleChange(e)} /></p>
-          <button onClick={()=>handleSum('plus')}>+</button> <button onClick={()=>handleSum('minus')}>-</button><br />
+          <button onClick={() => handleSum('plus')}>+</button> <button onClick={() => handleSum('minus')}>-</button><br />
           {
-          foodItem.Availability == 'true'?<button type="button" onClick={addItem}>Add to Cart</button>:
-        <button type="button" onClick={addItem} disabled style={{cursor: 'not-allowed'}}>Add to Cart</button>
-        }
+            foodItem.Availability == 'true' ? <button type="button" onClick={addItem}>Add to Cart</button> :
+              <button type="button" onClick={addItem} disabled style={{ cursor: 'not-allowed' }}>Add to Cart</button>
+          }
         </div>
       </section>
 

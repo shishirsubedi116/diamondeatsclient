@@ -32,7 +32,7 @@ const Page = ({ params }) => {
 
     useEffect(()=>{
         getData()
-    },[])
+    })
 
     return (
         <div className={styles.menudiv}>

@@ -13,13 +13,13 @@ const Page = () => {
       router.push('/')
       alert('Some error occured')
     }
-  }, [])
+  })
   return (
     <main className={styles.mainAdminPage}>
       <section className={styles.adminLinks}>
         <h2>Admin Dashboard</h2>
         <ul>
-          <li><Link href="/admin/order/todayorders">Today's Orders</Link></li>
+          <li><Link href="/admin/order/todayorders">Today&apos; s Orders</Link></li>
           <li><Link href="/admin/food/addfood">Add Food Item</Link></li>
           <li><Link href="/admin/food/deletefood">Delete Food</Link></li>
           <li><Link href="/admin/food/updatefood">Update Food Item</Link></li>
