@@ -8,7 +8,6 @@ import OrderItem from '@/components/orderItem/orderItem'
 
 const Page = () => {
 
-    const [searchvalue, setSearchvalue] = useState('')
     const [orders, setOrders] = useState([]);
     const router = useRouter();
 
@@ -59,17 +58,11 @@ const Page = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {
-                            searchData.length == 0 ?
-                                orders.map((elem) => {
-                                    return (
-                                        <OrderItem key={elem._id} _id={elem._id} OrderId={elem.OrderId} customerName={elem.customerName} phoneNo={elem.phoneNo} Address={elem.Address} Email={elem.Email} orderItems={elem.orderItems} OrderStatus={elem.OrderStatus} OrderedAt={elem.OrderedAt.slice(0, 10)} Price={elem.Price} deliveryAt={elem.deliveryAt.slice(0, 10)} />
-                                    )
-                                }) : searchData.map((elem) => {
-                                    return (
-                                        <OrderItem key={elem._id} _id={elem._id} OrderId={elem.OrderId} customerName={elem.customerName} phoneNo={elem.phoneNo} Address={elem.Address} Email={elem.Email} orderItems={elem.orderItems} OrderStatus={elem.OrderStatus} OrderedAt={elem.OrderedAt.slice(0, 10)} Price={elem.Price} deliveryAt={elem.deliveryAt.slice(0, 10)} />
-                                    )
-                                })
+                        {orders.map((elem) => {
+                            return (
+                                <OrderItem key={elem._id} _id={elem._id} OrderId={elem.OrderId} customerName={elem.customerName} phoneNo={elem.phoneNo} Address={elem.Address} Email={elem.Email} orderItems={elem.orderItems} OrderStatus={elem.OrderStatus} OrderedAt={elem.OrderedAt.slice(0, 10)} Price={elem.Price} deliveryAt={elem.deliveryAt.slice(0, 10)} />
+                            )
+                        })
                         }
 
                     </tbody>
