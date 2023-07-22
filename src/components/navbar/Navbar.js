@@ -42,6 +42,7 @@ const Navbar = () => {
               {
                 sessionStorage.getItem('isAdmin') ? <li><Link href="/admin">admin</Link></li> : <></>
               }
+              
             </ul>
             <div className={styles.authButtons}>
               {
