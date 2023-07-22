@@ -12,6 +12,7 @@ const Page = ({ params }) => {
   const router = useRouter()
   const [quantity, setQuantity] = useState(1)
   const { cartData, setCartData } = useContext(CartContext)
+  const [src, setSrc] = useState('')
 
   const fetchData = async () => {
     try {
@@ -24,6 +25,7 @@ const Page = ({ params }) => {
       const data = await response.json()
       if (data.success) {
         setFoodItem(data.message)
+        setSrc(`https://diamondeats.onrender.com/public/images/${data.message.Picture}`)
       }
       else {
         alert(data.message)
@@ -89,7 +91,7 @@ const Page = ({ params }) => {
     <main className={styles.viewFoodBox}>
       <section className={styles.foodItem}>
         <div className={styles.foodItem__image}>
-          <Image src={`https://diamondeats.onrender.com/public/images/${foodItem.Picture}`} alt=' Food Image' height={400} width={500} />
+          <Image src={src} loader={() => src} alt=' Food Image' height={400} width={400} />
         </div>
         <div className={styles.foodItem__details}>
           <h2><b>{foodItem.Name}</b></h2>
