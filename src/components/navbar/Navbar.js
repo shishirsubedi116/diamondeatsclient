@@ -42,7 +42,9 @@ const Navbar = () => {
               {
                 sessionStorage.getItem('isAdmin') ? <li><Link href="/admin">admin</Link></li> : <></>
               }
-              
+              {
+                sessionStorage.getItem('token')? <li><Link href="/myorders">My Orders</Link></li> : <></>
+              }
             </ul>
             <div className={styles.authButtons}>
               {
