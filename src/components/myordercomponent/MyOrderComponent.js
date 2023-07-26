@@ -3,9 +3,9 @@ import React from 'react'
 import styles from './myordercomponent.module.css'
 
 const MyOrderComponent = ({ orderData }) => {
-    console.log(orderData);
+    //(orderData);
     const { OrderId, customerName, orderItems, Address, phoneNo, deliveryAt, OrderStatus, OrderedAt, Email } = orderData
-    console.log(orderItems);
+    //(orderItems);
 
     const cancelOrder = async (id) => {
         try {
@@ -31,7 +31,7 @@ const MyOrderComponent = ({ orderData }) => {
                 return
             }
         } catch (error) {
-            console.log(error);
+            //(error);
         }
 
     }

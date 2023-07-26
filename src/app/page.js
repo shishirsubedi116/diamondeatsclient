@@ -15,7 +15,9 @@ export default function Home() {
     router.refresh()
   },[router])
 
-
+  useEffect(() => {
+    console.clear()
+})
   return (
     <main className={styles.homeContainer}>
       <div className={styles.content}>

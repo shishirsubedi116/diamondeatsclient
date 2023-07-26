@@ -9,6 +9,9 @@ const Page = ({ params }) => {
 
     const [status, setStatus] = useState('Completed')
     const router = useRouter()
+    useEffect(() => {
+        console.clear()
+    })
 
     const updateOrder = async (e) => {
         e.preventDefault()
@@ -31,7 +34,7 @@ const Page = ({ params }) => {
                 router.push('/')
             }
         } catch (error) {
-            console.log(error);
+            //(error);
         }
     }
 

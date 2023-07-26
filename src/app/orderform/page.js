@@ -10,6 +10,9 @@ const Page = () => {
     let quantity = 0
     let totalprice = 0
     const router = useRouter()
+    useEffect(() => {
+        console.clear()
+    })
 
     useEffect(() => {
         if (!sessionStorage.getItem('token')) {
@@ -44,7 +47,7 @@ const Page = () => {
             })
 
             const data = await response.json()
-            console.log(data);
+            //(data);
             if (data.success) {
                 alert(data.message)
                 router.push('/myorders')
@@ -55,7 +58,7 @@ const Page = () => {
                 router.push('/menu')
             }
         } catch (error) {
-            console.log(error);
+            //(error);
         }
     }
 

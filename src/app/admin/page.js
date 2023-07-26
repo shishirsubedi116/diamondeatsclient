@@ -14,6 +14,9 @@ const Page = () => {
       alert('Some error occured')
     }
   })
+  useEffect(() => {
+    console.clear()
+})
   return (
     <main className={styles.mainAdminPage}>
       <section className={styles.adminLinks}>

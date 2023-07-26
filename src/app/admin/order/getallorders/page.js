@@ -14,6 +14,10 @@ const Page = () => {
     const router = useRouter();
     const [searchData, setSearchData] = useState([])
 
+    useEffect(() => {
+        console.clear()
+    })
+
     const getSearchData = async (e) => {
         e.preventDefault()
         try {
@@ -25,7 +29,7 @@ const Page = () => {
                 }
             })
             const data = await fetchItems.json()
-            console.log(data);
+            //(data);
             if (data.success) {
                 setSearchData(data.message)
             }
@@ -34,7 +38,7 @@ const Page = () => {
                 router.push('/')
             }
         } catch (error) {
-            console.log(error);
+            //(error);
         }
     }
 
@@ -55,7 +59,7 @@ const Page = () => {
                 alert(data.message)
             }
         } catch (error) {
-            console.log(error);
+            //(error);
         }
     }
 

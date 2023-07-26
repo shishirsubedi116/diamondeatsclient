@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link'
-import React, { useContext, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './page.module.css'
 import { useRouter } from 'next/navigation';
 
@@ -11,6 +11,9 @@ const Page = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const router = useRouter();
+  useEffect(() => {
+    console.clear()
+})
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
@@ -41,7 +44,7 @@ const Page = () => {
         router.push('/')
       }
     } catch (error) {
-      console.log(error);
+      //(error);
     }
   }
 
@@ -64,7 +67,7 @@ const Page = () => {
         alert(data.message)
       }
     } catch (error) {
-      console.log(error);
+      //(error);
     }
   }
 

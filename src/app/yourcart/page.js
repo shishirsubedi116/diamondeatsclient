@@ -24,6 +24,9 @@ const Page = () => {
     setCartData(newCartData)
   }
 
+  useEffect(() => {
+    console.clear()
+})
   return (
     <main className={styles.yourCartPage}>
       <h1>Your Cart</h1>

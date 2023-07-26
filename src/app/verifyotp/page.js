@@ -16,6 +16,10 @@ const Page = () => {
         }
     })
 
+    useEffect(() => {
+        console.clear()
+    })
+
     const handleSubmit = async (e) => {
         e.preventDefault()
         if (sessionStorage.getItem('ForgotPass') == true) {
@@ -58,7 +62,7 @@ const Page = () => {
                     router.push('/signup')
                 }
             } catch (error) {
-                console.log(error);
+                //(error);
             }
         }
     }

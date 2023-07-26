@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './page.module.css'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation';
@@ -12,6 +12,9 @@ const Page = () => {
   const [address, setAddress] = useState('')
   const router = useRouter();
 
+  useEffect(() => {
+    console.clear()
+})
 
   const handleSubmit = async(e)=>{
     e.preventDefault()
@@ -33,7 +36,7 @@ const Page = () => {
         alert(data.message)
       }
     } catch (error) {
-      console.log(error);
+      //(error);
     }
 
   }

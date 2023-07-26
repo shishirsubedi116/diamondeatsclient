@@ -27,7 +27,7 @@ const Menu = () => {
             }
 
         } catch (error) {
-            console.log(error);
+            //(error);
         }
     }
 
@@ -39,7 +39,7 @@ const Menu = () => {
     //         }
 
     //     } catch (error) {
-    //         console.log(error);
+    //         //(error);
     //     }
 
     // }

@@ -16,6 +16,9 @@ const Page = () => {
         }
     })
 
+    useEffect(() => {
+        console.clear()
+    })
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {

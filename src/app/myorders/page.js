@@ -9,6 +9,9 @@ const Page = () => {
 
   const router = useRouter();
   const [orderData, setOrderData] = useState([])
+  useEffect(() => {
+    console.clear()
+  })
   const fetchdata = async () => {
     try {
       const response = await fetch('https://diamondeats.onrender.com/api/order/myallorders', {
@@ -19,15 +22,15 @@ const Page = () => {
         }
       })
       const data = await response.json()
-      if(data.success){
+      if (data.success) {
         setOrderData(data.message)
       }
-      else{
+      else {
         alert(data.message)
       }
 
     } catch (error) {
-      console.log(error);
+      //(error);
     }
   }
 
@@ -46,7 +49,7 @@ const Page = () => {
         <h2>Your Orders</h2>
         <div className={styles.orderList}>
           {
-            orderData.map((elem, index)=>{
+            orderData.map((elem, index) => {
               return (
                 <MyOrderComponent key={index} orderData={orderData[index]} />
               )

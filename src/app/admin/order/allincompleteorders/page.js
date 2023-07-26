@@ -10,7 +10,9 @@ const Page = () => {
 
     const [orders, setOrders] = useState([]);
     const router = useRouter();
-
+    useEffect(() => {
+        console.clear()
+    })
 
     const fetchAllOrders = async () => {
         try {
@@ -29,7 +31,7 @@ const Page = () => {
                 alert(data.message)
             }
         } catch (error) {
-            console.log(error);
+            //(error);
         }
     }
 

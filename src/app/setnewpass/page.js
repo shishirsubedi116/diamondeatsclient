@@ -10,6 +10,9 @@ const Page = () => {
   const [cpassword, setCpassword] = useState('')
   const router = useRouter()
 
+  useEffect(() => {
+    console.clear()
+})
   const handleSubmit = async (e) => {
     e.preventDefault()
     if(password!==cpassword){
@@ -36,7 +39,7 @@ const Page = () => {
         }
 
     } catch (error) {
-        console.log(error);
+        //(error);
     }
 }
 

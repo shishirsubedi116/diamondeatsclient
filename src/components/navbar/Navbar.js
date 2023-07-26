@@ -3,7 +3,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import styles from "./navbar.module.css"
 import Link from 'next/link'
-import logo from '../../../public/logo.png'
+import logo from '../../../public/logo2.png'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation';
 import { CartContext } from '@/context/CartContext'

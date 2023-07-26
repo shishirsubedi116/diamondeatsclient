@@ -14,6 +14,10 @@ const Page = () => {
             router.push('/')
         }
     })
+
+    useEffect(() => {
+        console.clear()
+    })
     
     const handleUpdate = async(e)=>{
         e.preventDefault()
@@ -35,7 +39,7 @@ const Page = () => {
                 alert(data.message)
             }
         } catch (error) {
-            console.log(error);
+            //(error);
         }
     }
 

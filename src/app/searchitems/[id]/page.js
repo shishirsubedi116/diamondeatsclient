@@ -8,6 +8,9 @@ import FoodContainer from '@/components/foodcontainer/FoodContainer'
 
 const Page = ({ params }) => {
     const id = params.id
+    useEffect(() => {
+        console.clear()
+    })
     const [foods, setFoods] = useState([])
     const getData = async () => {
         try {
@@ -26,7 +29,7 @@ const Page = ({ params }) => {
             }
 
         } catch (error) {
-            console.log(error);
+            //(error);
         }
     }
 

@@ -12,7 +12,9 @@ const Page = () => {
             router.push('/')
         }
     })
-
+    useEffect(() => {
+        console.clear()
+    })
     const deleteFood = async (e) => {
         e.preventDefault()
         try {
@@ -36,7 +38,7 @@ const Page = () => {
                 router.push('/admin')
             }
         } catch (error) {
-            console.log(error);
+            //(error);
         }
     }
     return (

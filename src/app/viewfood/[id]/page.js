@@ -13,7 +13,9 @@ const Page = ({ params }) => {
   const [quantity, setQuantity] = useState(1)
   const { cartData, setCartData } = useContext(CartContext)
   const [src, setSrc] = useState('')
-
+  useEffect(() => {
+    console.clear()
+})
   const fetchData = async () => {
     try {
       const response = await fetch(`https://diamondeats.onrender.com/api/food/singlefood/${id}`, {
@@ -33,7 +35,7 @@ const Page = ({ params }) => {
       }
 
     } catch (error) {
-      console.log(error);
+      //(error);
     }
   }
 
@@ -55,7 +57,7 @@ const Page = ({ params }) => {
       router.push('/menu')
       alert('Item Added')
     } catch (error) {
-      console.log(error);
+      //(error);
     }
   }
 

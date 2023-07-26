@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './page.module.css'
 import { useRouter } from 'next/navigation'
 
@@ -8,6 +8,10 @@ const Page = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [newPassword, setNewPassword] = useState('')
+
+    useEffect(() => {
+        console.clear()
+    })
 
     const router = useRouter()
 
@@ -32,7 +36,7 @@ const Page = () => {
             }
 
         } catch (error) {
-            console.log(error);
+            //(error);
         }
     }
 
